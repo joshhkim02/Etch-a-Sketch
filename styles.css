@@ -11,12 +11,13 @@ body {
   align-items: center;
   border: 1px solid rgb(0, 0, 0);
   padding: 10px;
-  min-width: 670px;
+  min-width: 675px;
+  max-width: 675px;
   height: min-content;
   flex-shrink: 0;
 }
 
-div {
+.gridItem {
   border: 0.1px solid black;
   width: 10px;
   height: 10px;
