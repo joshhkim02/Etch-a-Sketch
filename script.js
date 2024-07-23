@@ -19,3 +19,12 @@ gridItems.forEach((item) => {
     item.setAttribute("style", "background-color:blue");
   });
 });
+
+// Board resizing
+const btnResizeSelector = document.querySelector(".btn-resize");
+
+btnResizeSelector.addEventListener("click", () => {
+  gridItems.forEach((item) => {
+    item.remove();
+  });
+});
