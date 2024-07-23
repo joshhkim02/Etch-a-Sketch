@@ -1,5 +1,6 @@
 "use strict";
 
+// Initialize grid
 const containerSelector = document.querySelector(".container");
 
 for (let i = 0; i < 16; i++) {
@@ -9,9 +10,12 @@ for (let i = 0; i < 16; i++) {
     containerSelector.append(addDiv);
   }
 }
-const divSelector = document.querySelector(".gridItem");
-divSelector.addEventListener("click", sayHello);
 
-function sayHello() {
-  console.log("SUP");
-}
+// Hover effect
+const gridItems = document.querySelectorAll(".gridItem");
+
+gridItems.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    item.setAttribute("style", "background-color:blue");
+  });
+});

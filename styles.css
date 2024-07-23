@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -19,6 +20,13 @@ body {
 
 .gridItem {
   border: 0.1px solid black;
+  width: 10px;
+  height: 10px;
+  padding: 15px;
+}
+
+.color {
+  color: pink;
   width: 10px;
   height: 10px;
   padding: 15px;
