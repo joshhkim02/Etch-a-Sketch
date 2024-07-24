@@ -14,9 +14,19 @@ for (let i = 0; i < 16 * 16; i++) {
 // Hover effect
 let gridItems = document.querySelectorAll(".gridItem");
 
+// Random RGB color
+function randomColor() {
+  const min = 0;
+  const max = 256;
+  return String(Math.floor(Math.random() * (max - min) + min));
+}
+
+console.log(randomColor());
+console.log(typeof randomColor());
+
 gridItems.forEach((item) => {
   item.addEventListener("mouseenter", () => {
-    item.style.backgroundColor = "blue";
+    item.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
   });
 });
 
@@ -47,7 +57,7 @@ btnResizeSelector.addEventListener("click", () => {
 
   gridItems.forEach((item) => {
     item.addEventListener("mouseenter", () => {
-      item.style.backgroundColor = "blue";
+      item.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
     });
   });
 });

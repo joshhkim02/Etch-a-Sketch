@@ -16,7 +16,7 @@ body {
 }
 
 .gridItem {
-  border: 0.1px solid black;
+  /* border: 0.1px solid black; */
   box-sizing: border-box;
 }
 
